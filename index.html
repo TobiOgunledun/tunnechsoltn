@@ -38,7 +38,6 @@
                     <button>Get a Tutor</button>
                 </ul>
                 <aside id="menuIcon">
-                    <p id="menuText">menu</p>
                     <i class="fas fa-bars" id="show" onclick="showMenu()"></i>
                     <i class="fas fa-times" id="cancel" onclick="hideMenu()"></i>
                 </aside>
@@ -117,11 +116,11 @@
         </div>
     </section>
 
-    <section class="fourth" id="fourth" style=" background: var(--main-color);">
+    <section class="fourth" id="fourth">
         <div class="container">
             <div class="helpSection">
                 <div class="helpSide1">
-                    <header>
+                    <header style="text-align: start;">
                         <h1>need home tutors for your kids</h1>
                     </header>
                     <h1>Put your kids ahead early</h1>
@@ -186,7 +185,6 @@
 
     <script>
         const navMenu = document.getElementById("navMenu");
-        const menuText = document.getElementById("menuText");
         const show = document.getElementById("show");
         const cancel = document.getElementById("cancel");
         const body = document.getElementsByTagName("html")[0];
@@ -197,14 +195,12 @@
             show.style.display="none"
             cancel.style.display = "block";
             navMenu.style.right = "0";
-            menuText.innerHTML = "close"
             body.style.overflow = "hidden"
         }
         function hideMenu(){
             cancel.style.display = "none";
             show.style.display="block";
             navMenu.style.right = "";
-            menuText.innerHTML = "menu";
             body.style.overflow = ""
 
         }
