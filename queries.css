@@ -20,11 +20,30 @@
     nav label{
         width: 13%;
     }
-    .secondSection .side1, .secondSection .side2, .helpSide2, .helpSide1{
+    .secondSection .side1{
         width: 45%;
     }
-    .helpSection .helpSide2, .helpSection .helpSide1{
-        width: 45%;
+    .secondSection .side2{
+        width: 35%;
+    }
+    .helpSection .helpSide2{
+        width: 40%;
+        position: relative;
+        z-index: 1;
+    }
+    .helpSection .helpSide2::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: var(--main-color);
+        width: 100%;
+        height: 10em;
+        transform: translate(20%, 7em);
+        z-index: -1;
+    }
+    .helpSection .helpSide1{
+        width: 48%;
     }
     .sec1, .sec2, .sec3{
         width: 20em;
@@ -56,11 +75,30 @@
     nav label{
         width: 13%;
     }
-    .secondSection .side1, .secondSection .side2, .helpSide2, .helpSide1{
+    .secondSection .side1{
         width: 45%;
     }
-    .helpSection .helpSide2, .helpSection .helpSide1{
-        width: 45%;
+    .secondSection .side2{
+        width: 35%;
+    }
+    .helpSection .helpSide2{
+        width: 40%;
+        position: relative;
+        z-index: 1;
+    }
+    .helpSection .helpSide2::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: var(--main-color);
+        width: 100%;
+        height: 10em;
+        transform: translate(20%, 7em);
+        z-index: -1;
+    }
+    .helpSection .helpSide1{
+        width: 48%;
     }
     .sec1, .sec2, .sec3{
         width: 20em;
